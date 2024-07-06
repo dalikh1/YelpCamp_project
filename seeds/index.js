@@ -21,9 +21,10 @@ const seedDB = async () => {
         const random1000 = Math.floor(Math.random() * 1000);
         const price = Math.floor(Math.random() * 20) + 10;
         const camp = new Campground({
+            author: '66884d075567b7327c6732fd',
             title: `${sample(descriptors)} ${sample(places)}`,
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
-            image: 'https://img.freepik.com/free-photo/3d-car-with-vibrant-colors_23-2150796964.jpg?t=st=1719247284~exp=1719250884~hmac=82c6ed7cea8fcb9b5479cccae8ee388a6e9e609592862e2fb152519264e316e4&w=996',
+            image: 'https://picsum.photos/400?random=${Math.random()}',
             description: '32232323232....hola hola w ya jamila inti arbiya wala sbanyoura tebghi el hata w tebghi el banyoula',
             price 
         })
