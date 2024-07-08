@@ -8,6 +8,7 @@ const Campground = require('../models/campground');
 mongoose.connect('mongodb://localhost:27017/yelp-camp');
 
 const db = mongoose.connection;
+
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
     console.log("Database connected");
@@ -30,9 +31,6 @@ const seedDB = async () => {
                 {
                     url: 'https://res.cloudinary.com/dgndhkwy6/image/upload/v1720435245/YelpCamp/alrqkjbk3tl5xquxw9ag.jpg',
                     filename: 'YelpCamp/alrqkjbk3tl5xquxw9ag'
-                },
-                {
-                    
                 }
             ]
         })
