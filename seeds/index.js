@@ -27,6 +27,10 @@ const seedDB = async () => {
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             description: '32232323232....hola hola w ya jamila inti arbiya wala sbanyoura tebghi el hata w tebghi el banyoula',
             price,
+            geometry: {
+                type: "Point",
+                coordinates: [-113.1331, 47.0202]
+            },
             images: [
                 {
                     url: 'https://res.cloudinary.com/dgndhkwy6/image/upload/v1720435245/YelpCamp/alrqkjbk3tl5xquxw9ag.jpg',
